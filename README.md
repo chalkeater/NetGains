@@ -1,11 +1,15 @@
-# Welcome to your new ignited app!
+# NetGains - Volleyball Training App
 
-> The latest and greatest boilerplate for Infinite Red opinions
+> A React Native volleyball training app built with Ignite boilerplate
 
-This is the boilerplate that [Infinite Red](https://infinite.red) uses as a way to test bleeding-edge changes to our React Native stack.
+NetGains is a comprehensive volleyball training application that helps players improve their skills through daily challenges and game situation practice. Built with React Native using the [Infinite Red](https://infinite.red) Ignite boilerplate.
 
-- [Quick start documentation](https://github.com/infinitered/ignite/blob/master/docs/boilerplate/Boilerplate.md)
-- [Full documentation](https://github.com/infinitered/ignite/blob/master/docs/README.md)
+## Features
+
+- **Daily Challenges**: Practice-focused drills for serving, passing, setting, attacking, blocking, and digging
+- **Game Situations**: Interactive scenarios to develop volleyball IQ and decision-making skills
+- **Progress Tracking**: Monitor your improvement with detailed statistics and achievements
+- **Skill Development**: Structured training programs for players of all levels
 
 ## Getting Started
 
@@ -62,7 +66,7 @@ Follow our [Maestro Setup](https://ignitecookbook.com/docs/recipes/MaestroSetup)
 
 ### Ignite Cookbook
 
-[Ignite Cookbook](https://ignitecookbook.com/) is an easy way for developers to browse and share code snippets (or “recipes”) that actually work.
+[Ignite Cookbook](https://ignitecookbook.com/) is an easy way for developers to browse and share code snippets (or "recipes") that actually work.
 
 ### Upgrade Ignite boilerplate
 
