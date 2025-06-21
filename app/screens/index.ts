@@ -6,4 +6,6 @@ export * from "./DemoDebugScreen"
 export * from "./DemoShowroomScreen/DemoShowroomScreen"
 
 export * from "./ErrorScreen/ErrorBoundary"
+export * from "./DailyChallengesScreen"
+export * from "./GameSituationScreen"
 // export other screens here

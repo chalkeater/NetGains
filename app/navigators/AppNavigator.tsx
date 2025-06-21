@@ -7,12 +7,13 @@
 import { NavigationContainer, NavigatorScreenParams } from "@react-navigation/native"
 import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navigation/native-stack"
 import { observer } from "mobx-react-lite"
-import * as Screens from "@/screens"
+import * as Screens from "../screens"
 import Config from "../config"
 import { useStores } from "../models"
 import { DemoNavigator, DemoTabParamList } from "./DemoNavigator"
+import { VolleyballNavigator, VolleyballTabParamList } from "./VolleyballNavigator"
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
-import { useAppTheme, useThemeProvider } from "@/utils/useAppTheme"
+import { useAppTheme, useThemeProvider } from "../utils/useAppTheme"
 import { ComponentProps } from "react"
 
 /**
@@ -32,6 +33,7 @@ export type AppStackParamList = {
   Welcome: undefined
   Login: undefined
   Demo: NavigatorScreenParams<DemoTabParamList>
+  Volleyball: NavigatorScreenParams<VolleyballTabParamList>
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
@@ -73,7 +75,7 @@ const AppStack = observer(function AppStack() {
       {isAuthenticated ? (
         <>
           <Stack.Screen name="Welcome" component={Screens.WelcomeScreen} />
-
+          <Stack.Screen name="Volleyball" component={VolleyballNavigator} />
           <Stack.Screen name="Demo" component={DemoNavigator} />
         </>
       ) : (
