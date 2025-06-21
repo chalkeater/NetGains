@@ -610,7 +610,7 @@ export const seedDatabase = async () => {
           record.instructions = challenge.instructions
           record.coachingPoints = challenge.coachingPoints
           record.isPartnerRequired = challenge.isPartnerRequired
-          record.createdAt = new Date()
+          // createdAt is @readonly and will be set automatically by WatermelonDB
         })
       }
 
@@ -624,7 +624,7 @@ export const seedDatabase = async () => {
           record.scenarioData = situation.scenarioData
           record.correctAnswer = situation.correctAnswer
           record.explanation = situation.explanation
-          record.createdAt = new Date()
+          // createdAt is @readonly and will be set automatically by WatermelonDB
         })
       }
 
@@ -637,7 +637,7 @@ export const seedDatabase = async () => {
           record.category = achievement.category
           record.criteria = achievement.criteria
           record.points = achievement.points
-          record.createdAt = new Date()
+          // createdAt is @readonly and will be set automatically by WatermelonDB
         })
       }
     })
